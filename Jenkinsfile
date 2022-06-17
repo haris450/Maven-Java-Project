@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven MAVEN_HOME
+        maven 'Maven 3.6.3'
     }
 
     stages {
