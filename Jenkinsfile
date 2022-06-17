@@ -1,17 +1,6 @@
-def ansible = [:]
-         ansible.name = 'ansible'
-         ansible.host = '172.31.30.154'
-         ansible.user = 'centos'
-         ansible.password = 'Rnstech@123'
-         ansible.allowAnyHosts = true
-def kops = [:]
-         kops.name = 'kops'
-         kops.host = '172.31.34.51'
-         kops.user = 'centos'
-         kops.password = 'Rnstech@123'
-         kops.allowAnyHosts = true
+
 pipeline {
-    agent { label 'buildserver'}
+    agent any
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
